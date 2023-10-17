@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.showcase {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.house {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcase-top {
+  position: absolute;
+  bottom: 400px;
+  right: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 2;
+  padding: 26px 0px 0px 55px;
+  top: 8px;
+  left: 5px;
+}
+.showcase-top #logo {
+  height: 25px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.showcase-top .submit {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 3px;
+  float: right;
+  position: relative;
+  left: 480px;
+}
+.showcase-top select {
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  float: right;
+  position: relative;
+  left: 470px;
+}
+.showcase-top select option {
+  color: black;
+}
+.showcase .get-started-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+.showcase .get-started-container h1,
+p {
+  color: white;
+  background-color: transparent;
+}
+.showcase .get-started-container h1 {
+  font-size: 3.5rem;
+}
+
+.showcase .get-started-container .para-1 {
+  font-size: 1.5rem;
+}
+.showcase .get-started-container .para-2 {
+  font-size: 1.2rem;
+}
+
+.showcase .get-started-container input {
+  width: 35%;
+  padding: 20px;
+  border: none;
+  margin-top: 0.5%;
+  outline: none;
+}
+
+.showcase .get-started-container button {
+  padding: 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  margin-left: -0.3%;
+  font-weight: bold;
+}
+
+.main-section .section-container {
+  border-top: 8px solid #222;
+  background-color: black;
+
+  display: flex;
+  padding: 0px 80px;
+  padding-bottom: 90px;
+}
+
+.main-section .section-container .left-column {
+  padding-top: 13%;
+  padding-right: 2%;
+  color: white;
+}
+
+.main-section .section-container h3 {
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-top: 5%;
+}
+.main-section .section-container .right-column {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 500px;
+}
+.main-section .section-container .right-column img {
+  position: absolute;
+  width: 100%;
+}
+
+.main-section .section-container .right-column .video-1 {
+  margin-top: 13%;
+  margin-left: 16%;
+  width: 73%;
+}
+
+.main-section .section2-container {
+  border-top: 8px solid #222;
+  background-color: black;
+  display: flex;
+  padding: 0px 80px;
+  padding-bottom: 90px;
+}
+.main-section .section2-container .left-column img {
+  width: 100%;
+}
+.main-section .section2-container .left-column .box {
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background-color: black;
+  border-radius: 10px;
+  width: 55%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: -20%;
+}
+
+.main-section .section2-container .left-column .box .boxshot {
+  width: 15%;
+}
+
+.main-section .section2-container .left-column .box p {
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.main-section .section2-container .left-column .box p a {
+  text-decoration: none;
+}
+
+.main-section .section2-container .left-column .box .download-gif {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  right: 0;
+}
+.main-section .section2-container .right-column {
+  color: white;
+  padding-top: 13%;
+  width: 50%;
+  padding-right: 2%;
+}
+
+.main-section .section2-container .right-container h3 {
+  font-size: 1.7rem;
+  font-weight: normal;
+}
+
+.main-section .section-container .right1-column {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 500px;
+}
+
+.main-section .section-container .right1-column img {
+  position: absolute;
+  width: 80%;
+  margin-top: 90px;
+}
+
+.main-section .section-container .right1-column .video-2 {
+  margin-top: 19%;
+  margin-left: 16%;
+  width: 50%;
+}
+
+.question-section {
+  border-top: 8px solid #222;
+  background-color: #000000;
+  color: white;
+  padding-top: 60px;
+}
+
+.question-section h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.question-section button {
+  border: none;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+  margin: 0px auto;
+  margin-top: 30px;
+  position: relative;
+}
+.question-section button img{
+width: 3%;
+display: flex;
+align-items: center;
+margin: 0 auto;
+position: absolute;
+right: 20px;
+}
+.question-section .answer1, .answer2, .answer3, .answer4, .answer5, .answer6{
+    background-color: #303030;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+        display: none;
+
+}
+.email-address-container{
+  background-color: #000000;  
+  margin: 0 auto;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  padding-top:3% ;
+  padding-bottom: 4%;
+}
+.email-address-container input{
+     background-color: #000000;
+border-color: white;
+    width: 25%;
+    padding: 1.2%;
+    margin-top: 0.5%;
+   border-radius: 5px;
+  
+
+}
+.email-address-container button{
+    background-color: red;
+    color: white;
+    padding: 1.2%;
+        border-radius: 5px;
+        border-color: black;
+}
+footer{
+    background-color: #000000;
+    border-top: 8px solid #222;
+    padding-top: 5%;
+}
+footer h5{
+    color: white;
+    text-align: center;
+ padding-bottom: 1%;
+}
+footer .content{
+    max-width: 1350px;
+    margin: 0 90px;
+    padding: 20px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+footer .content .box{
+    width: 20%;
+    transition: all 0.4s ease;
+}
+footer.content p{
+    text-align: justify;
+}
+
+footer .content .middle{
+    padding-left:80px;
+
+}
+footer .content .middle{
+    line-height: 32px;
+  
+}
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .main-section .section-container {
+    display: block;
+  }
+  .main-section .section-container .left-column {
+    width: 100%;
+    text-align: center;
+  }
+  .main-section .section-container .right-column {
+    width: 100%;
+    text-align: center;
+  }
+  .main-section .section2-container {
+    display: block;
+  }
+
+  .main-section .section2-container .left-column {
+    width: 100%;
+    text-align: center;
+  }
+  .main-section .section2-container .right-column {
+    width: 100%;
+    text-align: center;
+  }
+   .question-section button{
+    width: 100%;
+   }
+.question-section .answer1, .answer2, .answer3, .answer4, .answer5, .answer6{
+    width: 100%;
+}
+.email-address-container input{
+    padding: 17px;
+    width: 55%;
+}
+.email-address-container button{
+    display: block;
+    display: flex;
+    align-items: centre;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    padding: 20px;
+ }
+}
